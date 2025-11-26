@@ -1,0 +1,47 @@
+# 创建完整的 .gitignore
+cat > .gitignore << 'EOF'
+# 构建目录
+build/
+cmake-build-*/
+cmake-build-*/
+CMakeFiles/
+
+# 编译产物
+*.exe
+*.out
+*.app
+*.o
+*.a
+*.so
+*.dll
+*.lib
+
+# CMake 缓存和临时文件
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# IDE 文件
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+*.lnk
+
+# 日志文件
+*.log
+
+# 依赖目录
+deps/
+_deps/
+
+# 本地配置文件
+local.cmake
+*.local
+EOF
